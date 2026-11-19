@@ -1,0 +1,323 @@
+{
+  "synthetic": true,
+  "tables": {
+    "trips": [
+      {
+        "trip": "T1",
+        "community": "梧桐",
+        "arrival": "08:55-09:15",
+        "alt_arrival": null,
+        "return": "10:00-10:45",
+        "wheelchair": true,
+        "max_walk_min": 4,
+        "locked": true
+      },
+      {
+        "trip": "T2",
+        "community": "柳桥",
+        "arrival": "09:00-09:25",
+        "alt_arrival": "10:00-10:25",
+        "return": "11:00-12:30",
+        "wheelchair": false,
+        "max_walk_min": 8,
+        "locked": false
+      },
+      {
+        "trip": "T3",
+        "community": "梧桐",
+        "arrival": "09:00-09:30",
+        "alt_arrival": null,
+        "return": "11:00-11:50",
+        "wheelchair": false,
+        "max_walk_min": 6,
+        "locked": false
+      },
+      {
+        "trip": "T4",
+        "community": "柳桥",
+        "arrival": "09:55-10:25",
+        "alt_arrival": null,
+        "return": "11:00-11:55",
+        "wheelchair": true,
+        "max_walk_min": 5,
+        "locked": false
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "常态",
+        "required": [
+          "T1",
+          "T2",
+          "T3"
+        ]
+      },
+      {
+        "scenario": "复诊增多",
+        "required": [
+          "T1",
+          "T2",
+          "T3",
+          "T4"
+        ]
+      }
+    ],
+    "community_floors": [
+      {
+        "community": "梧桐",
+        "floor": 1.0
+      },
+      {
+        "community": "柳桥",
+        "floor": 0.5
+      }
+    ],
+    "legs": [
+      {
+        "plan": "BASE",
+        "run": "B1",
+        "seq": 1,
+        "from": "梧桐",
+        "to": "医院",
+        "depart": "08:40",
+        "arrive": "09:00",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "BASE",
+        "run": "B1R",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "10:15",
+        "arrive": "10:35",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "BASE",
+        "run": "B2",
+        "seq": 1,
+        "from": "柳桥",
+        "to": "医院",
+        "depart": "08:50",
+        "arrive": "09:20",
+        "vehicle": "V2",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "BASE",
+        "run": "B2R",
+        "seq": 1,
+        "from": "医院",
+        "to": "柳桥",
+        "depart": "11:15",
+        "arrive": "11:45",
+        "vehicle": "V2",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "BASE",
+        "run": "B3R",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "11:10",
+        "arrive": "11:30",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "B1",
+        "seq": 1,
+        "from": "梧桐",
+        "to": "医院",
+        "depart": "08:40",
+        "arrive": "09:00",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "B1R",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "10:15",
+        "arrive": "10:35",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "D1",
+        "seq": 1,
+        "from": "柳桥",
+        "to": "梧桐",
+        "depart": "09:25",
+        "arrive": "09:40",
+        "vehicle": "V2",
+        "standard": 1,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "D1",
+        "seq": 2,
+        "from": "梧桐",
+        "to": "医院",
+        "depart": "09:40",
+        "arrive": "10:05",
+        "vehicle": "V2",
+        "standard": 1,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "D2",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "11:05",
+        "arrive": "11:30",
+        "vehicle": "V2",
+        "standard": 1,
+        "accessible": 1
+      },
+      {
+        "plan": "VIA",
+        "run": "D2",
+        "seq": 2,
+        "from": "梧桐",
+        "to": "柳桥",
+        "depart": "11:30",
+        "arrive": "11:50",
+        "vehicle": "V2",
+        "standard": 1,
+        "accessible": 1
+      },
+      {
+        "plan": "JOIN",
+        "run": "B1",
+        "seq": 1,
+        "from": "梧桐",
+        "to": "医院",
+        "depart": "08:40",
+        "arrive": "09:00",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "JOIN",
+        "run": "B1R",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "10:15",
+        "arrive": "10:35",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "JOIN",
+        "run": "F1",
+        "seq": 1,
+        "from": "柳桥",
+        "to": "梧桐东",
+        "depart": "08:25",
+        "arrive": "08:36",
+        "vehicle": "V2",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "JOIN",
+        "run": "F2",
+        "seq": 1,
+        "from": "医院",
+        "to": "梧桐",
+        "depart": "11:05",
+        "arrive": "11:30",
+        "vehicle": "V1",
+        "standard": 2,
+        "accessible": 1
+      },
+      {
+        "plan": "JOIN",
+        "run": "F3",
+        "seq": 1,
+        "from": "梧桐东",
+        "to": "柳桥",
+        "depart": "11:38",
+        "arrive": "11:52",
+        "vehicle": "V2",
+        "standard": 2,
+        "accessible": 1
+      }
+    ],
+    "walks": [
+      {
+        "from": "梧桐东",
+        "to": "梧桐",
+        "minutes": 4
+      },
+      {
+        "from": "梧桐",
+        "to": "梧桐东",
+        "minutes": 4
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle": "V1",
+        "from": "08:00",
+        "to": "13:00",
+        "state": "开放"
+      },
+      {
+        "vehicle": "V2",
+        "from": "08:00",
+        "to": "13:00",
+        "state": "开放"
+      }
+    ],
+    "reservations": [
+      {
+        "record": "O1",
+        "trip": "T1",
+        "outbound": "B1",
+        "inbound": "B1R",
+        "state": "已确认"
+      }
+    ],
+    "dispatch_log": [
+      {
+        "at": "2026-11-23T16:00",
+        "plan": "JOIN",
+        "vehicle": null,
+        "event": "公告",
+        "from": null,
+        "to": null
+      },
+      {
+        "at": "2026-11-24T07:00",
+        "plan": null,
+        "vehicle": "V2",
+        "event": "不可用",
+        "from": "08:00",
+        "to": "10:30"
+      }
+    ]
+  }
+}

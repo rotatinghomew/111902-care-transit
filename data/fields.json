@@ -1,0 +1,143 @@
+{
+  "trips": {
+    "trip": [
+      "str"
+    ],
+    "community": [
+      "str"
+    ],
+    "arrival": [
+      "str"
+    ],
+    "alt_arrival": [
+      "NoneType",
+      "str"
+    ],
+    "return": [
+      "str"
+    ],
+    "wheelchair": [
+      "bool"
+    ],
+    "max_walk_min": [
+      "int"
+    ],
+    "locked": [
+      "bool"
+    ]
+  },
+  "scenarios": {
+    "scenario": [
+      "str"
+    ],
+    "required": [
+      "list"
+    ]
+  },
+  "community_floors": {
+    "community": [
+      "str"
+    ],
+    "floor": [
+      "float"
+    ]
+  },
+  "legs": {
+    "plan": [
+      "str"
+    ],
+    "run": [
+      "str"
+    ],
+    "seq": [
+      "int"
+    ],
+    "from": [
+      "str"
+    ],
+    "to": [
+      "str"
+    ],
+    "depart": [
+      "str"
+    ],
+    "arrive": [
+      "str"
+    ],
+    "vehicle": [
+      "str"
+    ],
+    "standard": [
+      "int"
+    ],
+    "accessible": [
+      "int"
+    ]
+  },
+  "walks": {
+    "from": [
+      "str"
+    ],
+    "to": [
+      "str"
+    ],
+    "minutes": [
+      "int"
+    ]
+  },
+  "vehicles": {
+    "vehicle": [
+      "str"
+    ],
+    "from": [
+      "str"
+    ],
+    "to": [
+      "str"
+    ],
+    "state": [
+      "str"
+    ]
+  },
+  "reservations": {
+    "record": [
+      "str"
+    ],
+    "trip": [
+      "str"
+    ],
+    "outbound": [
+      "str"
+    ],
+    "inbound": [
+      "str"
+    ],
+    "state": [
+      "str"
+    ]
+  },
+  "dispatch_log": {
+    "at": [
+      "str"
+    ],
+    "plan": [
+      "NoneType",
+      "str"
+    ],
+    "vehicle": [
+      "NoneType",
+      "str"
+    ],
+    "event": [
+      "str"
+    ],
+    "from": [
+      "NoneType",
+      "str"
+    ],
+    "to": [
+      "NoneType",
+      "str"
+    ]
+  }
+}
